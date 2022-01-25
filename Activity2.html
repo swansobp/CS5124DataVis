@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIS In-Class Practice</title>
+    
+    <!-- The following line references an external css file -->
+    <!-- It defines style rules for your page, and elements in your page -->
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .winter-storm-freeze{
+            fill: #ccc;
+            opacity: .6;
+        }
+        .drought-wildfire{
+            fill: #ffffd9;
+            opacity: .6;
+        }
+        .flooding{
+            fill: #41b6c4;
+            opacity: .6;
+        }
+        .tropical-cyclone{
+            fill: #081d58;
+            opacity: .6;
+        }
+        .severe-storm{
+            fill: #c7e9b4;
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+    <p>Ben Swanson</p>
+    <br>
+
+    <svg height="800" width="1000">
+        <!--Graph Setup-->
+        <line x1="100" y1="200" x2="800" y2="200" style="stroke:rgb(0, 0, 0);stroke-width:2" />
+        <line x1="100" y1="500" x2="800" y2="500" style="stroke:rgb(0,0,0);stroke-width:2" />
+        <text x="815" y="206" fill="black">2017</text>
+        <text x="815" y="506" fill="black">2016</text>
+        <text x="101" y="350" fill="black"> Jan</text>
+        <text x="161" y="350" fill="black"> Feb</text>
+        <text x="214" y="350" fill="black"> Mar</text>
+        <text x="274" y="350" fill="black"> Apr</text>
+        <text x="331" y="350" fill="black"> May</text>
+        <text x="390" y="350" fill="black"> Jun</text>
+        <text x="448" y="350" fill="black"> Jul</text>
+        <text x="507" y="350" fill="black"> Aug</text>
+        <text x="566" y="350" fill="black"> Sep</text>
+        <text x="624" y="350" fill="black"> Oct</text>
+        <text x="683" y="350" fill="black"> Nov</text>
+        <text x="740" y="350" fill="black"> Dec</text>
+
+        <!-- 2017 Disasters-->
+        <circle class="tropical-cyclone" cx="556" cy="200" r="126" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="404" cy="200" r="18" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="343" cy="200" r="17" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="261" cy="200" r="16" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="222" cy="200" r="16" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="211" cy="200" r="15" stroke="black" stroke-width="1"  />
+        <circle class="flooding" cx="318" cy="200" r="15" stroke="black" stroke-width="1"  />
+        <circle class="flooding" cx="172" cy="200" r="14" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="136" cy="200" r="12" stroke="black" stroke-width="1"  />
+
+        <!-- 2016 Disasters-->
+        <circle class="flooding" cx="528" cy="500" r="36" stroke="black" stroke-width="1"  />
+        <circle class="tropical-cyclone" cx="637" cy="500" r="36" stroke="black" stroke-width="1"  />
+        <circle class="drought-wildfire" cx="100" cy="500" r="21" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="291" cy="500" r="21" stroke="black" stroke-width="1"  />
+        <circle class="flooding" cx="304" cy="500" r="19" stroke="black" stroke-width="1"  />
+        <circle class="drought-wildfire" cx="390" cy="500" r="18" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="321" cy="500" r="18" stroke="black" stroke-width="1"  />
+        <circle class="flooding" cx="228" cy="500" r="17" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="256" cy="500" r="16" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="344" cy="500" r="15" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="499" cy="500" r="13" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="245" cy="500" r="12" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="369" cy="500" r="12" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="199" cy="500" r="11" stroke="black" stroke-width="1"  />
+
+
+        <!--Key-->
+        <text x="101" y="650" fill="black">KEY:</text>
+        <circle class="winter-storm-freeze" cx="165" cy="644" r="8" stroke="black" stroke-width="1"  />
+        <circle class="drought-wildfire" cx="165" cy="669" r="8" stroke="black" stroke-width="1"  />
+        <circle class="flooding" cx="165" cy="694" r="8" stroke="black" stroke-width="1"  />
+        <circle class="tropical-cyclone" cx="165" cy="719" r="8" stroke="black" stroke-width="1"  />
+        <circle class="severe-storm" cx="165" cy="744" r="8" stroke="black" stroke-width="1"  />
+        <text x="180" y="649" fill="black">Winter Storms, Freezing</text>
+        <text x="180" y="674" fill="black">Drought and Wildfire</text>
+        <text x="180" y="699" fill="black">Flooding</text>
+        <text x="180" y="724" fill="black">Tropical Cyclones</text>
+        <text x="180" y="749" fill="black">Severe Storms</text>
+        
+
+    </svg>
+    <!-- Load external JS files -->
+    <!-- This is where you will do most of the 'work' for your applications -->
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
